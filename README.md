@@ -1,2 +1,1 @@
-# line
-LINE課題の解答案
+[Github Pages](https://kodai01.github.io/line/)
