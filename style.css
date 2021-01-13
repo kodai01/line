@@ -1,0 +1,125 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 24px;
+  background-color: #7da4cd;
+}
+
+body > *:not(:first-child) {
+  margin-top: 16px;
+}
+
+.chat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.chat .chat-info {
+  min-width: 32px;
+  font-size: 10px;
+  word-break: keep-all;
+}
+
+.chat .chat-content {
+  padding: 12px;
+  border-radius: 12px;
+  word-break: break-all;
+  max-width: calc(100vw - 112px);
+}
+
+.chat .chat-content p {
+  margin: 0;
+}
+
+.chat.to .chat-icon > .chat-img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.chat.to .chat-data .chat-whiter {
+  margin: 0 0 4px 12px;
+  font-size: 12px;
+}
+
+.chat.to .chat-data .chat-content {
+  position: relative;
+  background-color: lightgray;
+}
+
+.chat.to .chat-data .chat-content:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 3px;
+  left: -19px;
+  border: 8px solid transparent;
+  border-right: 18px solid lightgray;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+}
+
+.chat.to .chat-info {
+  margin-left: 12px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.chat.from {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.chat.from .chat-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 12px;
+  text-align: right;
+}
+
+.chat.from .chat-content {
+  position: relative;
+  background: greenyellow;
+}
+
+.chat.from .chat-content:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: -19px;
+  border: 8px solid transparent;
+  border-left: 18px solid greenyellow;
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+}
+
+.independent-data {
+  padding: 4px 8px;
+  margin-left: 16px;
+  margin-right: 16px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 12px;
+  background-color: gray;
+  color: white;
+  border-radius: 8px;
+  line-height: 16px;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
